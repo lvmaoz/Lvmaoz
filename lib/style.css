@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.all {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #7A88FF, #7AFFAF);
+    z-index: -1000;
+}
+
+.box {
+    position: relative;
+    margin: 2.5% auto;
+    width: 70%;
+    height: 90%;
+    background-color: rgb(245, 245, 255);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.right-box {
+    position: absolute;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    background-color: rgb(245, 245, 255);
+    border-left: 1px solid #ddd;
+    z-index: 1;
+}
+
+.top-box {
+    overflow: hidden;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(245, 245, 255);
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+}
+
+.left {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+.circle {
+    border-radius: 50%;
+    margin: 1% 1%;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fe4d46;
+    box-shadow: 14px 0 0 0 #fbc023, 28px 0 0 0 #7dd21f;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    font-size: 2em;
+    letter-spacing: .3em;
+    color: #FFFFFF;
+    text-align: center;
+    border-top: 2px solid #E6EE9C;
+    border-bottom: 2px solid #E6EE9C;
+}
+
+.contextmenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    z-index: 999999;
+}
+
+.contextmenu li {
+    border-left: 3px solid transparent;
+    transition: ease .2s;
+}
+
+.contextmenu li a {
+    display: block;
+    padding: 10px;
+    color: #B0BEC5;
+    text-decoration: none;
+    transition: ease .2s;
+}
+
+.contextmenu li:hover {
+    background: rgb(155, 210, 255);
+    border-left: 3px solid rgb(107, 133, 247);
+}
+
+.contextmenu li:hover a {
+    color: #FFFFFF;
+}
+
+.point {
+    font-family: Microsoft Yahei;
+    color: silver;
+    display: none;
+}
+
+.article_box{
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 6%;
+    width: 88%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1500px) {
+    .article_box{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .box{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .left {
+        display: none;
+    }
+    .point {
+        display: inline;
+    }
+    .right-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height:600px) {
+    .copyright {
+        display: none;
+    }
+}
+
+.btn-2 {
+    margin-top: 60px;
+}
+
+.btn-3 {
+    margin-top: 120px;
+}
+
+.btn-4 {
+    margin-top: 180px;
+}
+
+.btn-5 {
+    margin-top: 240px;
+}
+
+.copyright {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 10px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: rgb(151, 153, 153);
+    font-family: Microsoft Yahei;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.search {
+    position: absolute;
+    text-align: left;
+    margin-top: 25px;
+    right: 2.5%;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #8f8f8f;
+    border-radius: 60px;
+}
+
+.search p {
+    margin-left: 10px;
+    color: #676767;
+}
+
+.search p:hover {
+    color: rgba(255, 255, 255, 0);
+}
+
+
+.img_box{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(126, 126, 126);
+    overflow: hidden;
+}
+
+.img_box img{
+    background-image: url(https://desk-fd.zol-img.com.cn/t_s1366x768c5/g5/M00/0F/08/ChMkJ1YofZGIVRNpAAzwyIPyWFkAAD9owIrfMoADPDg492.jpg) no-repeat center center;
+}
+
+.tag_link{
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+}
